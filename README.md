@@ -23,7 +23,8 @@ A aplicação integra a **Open-Meteo API** para consultar automaticamente a temp
 ## 🎨 Prototipação & Design System
 
 - **🎨 Protótipo no Figma:** [Acessar Projeto no Figma](https://www.figma.com/)
-- **📐 Design System:** [Documentação de tokens e guia de estilo](docs/architecture.md#3-design-tokens-identidade-visual)
+- **📐 Design System:** [Documentação do Design System](docs/design-system.md)
+- **📐 Arquitetura de Software:** [Documentação de Arquitetura](docs/architecture.md)
 
 ---
 
@@ -45,46 +46,11 @@ A aplicação integra a **Open-Meteo API** para consultar automaticamente a temp
 
 ---
 
-## ✅ Checklist de Funcionalidades (IDs dos RAs)
+## ✅ Checklist de Funcionalidades
 
-### RA1 - Frameworks CSS e Layouts Responsivos
+O acompanhamento detalhado do status dos Indicadores de Desempenho (IDs) e Resultados de Aprendizagem (RAs) da matriz da UTFPR está documentado no arquivo exclusivo:
 
-- [x] **ID 01:** Prototipação de telas mobile e desktop no Figma.
-- [ ] **ID 02:** Layout responsivo construído com Grid e Flexbox do Bootstrap 5.
-- [ ] **ID 03:** Seções customizadas com layout fluido em CSS puro (Flexbox/Grid).
-- [ ] **ID 04:** Utilização de componentes Bootstrap (Cards, Navbar, Modais e Badges).
-- [ ] **ID 05:** Estilização fluida com unidades relativas (`rem`, `em`, `%`, `vh`, `vw`).
-- [x] **ID 06:** Design System consistente aplicado (paleta de trigo/crosta, tipografia).
-- [ ] **ID 07:** Uso de Sass (SCSS) com variáveis, mixins e funções para modularização.
-- [ ] **ID 08:** Tipografia fluida e responsiva com `clamp()` e media queries _mobile-first_.
-- [ ] **ID 09:** Responsividade de imagens usando `object-fit: cover` e containers flexíveis.
-- [ ] **ID 10:** Otimização de imagens do projeto no formato WebP.
-
-### RA2 - Formulários e Validações no Cliente
-
-- [ ] **ID 11:** Validação nativa HTML5 nos formulários (`required`, `min`, `max`).
-- [ ] **ID 12:** Validação customizada via Expressões Regulares (REGEX).
-- [ ] **ID 13:** Uso de elementos de seleção (`<select>`, `<input type="radio">`, `<input type="checkbox">`).
-- [ ] **ID 14:** Leitura e escrita no `localStorage` para salvar favoritos e estado do tema.
-
-### RA3 - Ferramentas de Otimização e Workflow
-
-- [x] **ID 15:** Ambiente configurado com Node.js e NPM para gerenciamento de dependências.
-- [x] **ID 16:** Versionamento Git/GitHub correto na branch `main` e arquivo `.gitignore`.
-- [x] **ID 17:** Arquivo `README.md` padronizado conforme o template e matriz da UTFPR.
-- [x] **ID 18:** Organização de arquivos de forma modular (`/docs`, `/css`, `/js`, `/assets`).
-- [x] **ID 19:** Configuração de linters e formatadores (ESLint, Prettier).
-
-### RA4 - JavaScript e Bibliotecas Externas
-
-- [ ] **ID 20:** Manipulação de eventos e elementos do DOM utilizando jQuery.
-- [ ] **ID 21:** Integração do jQuery Mask Plugin para aplicação de máscaras nos formulários.
-
-### RA5 - Requisições Assíncronas (APIs)
-
-- [ ] **ID 22:** Requisições assíncronas (`POST`/`PUT`/`DELETE`) para o JSON Server.
-- [ ] **ID 23:** Requisições assíncronas (`GET`) para renderizar lista e métricas no dashboard.
-- [ ] **ID 24:** Requisições assíncronas para a **Open-Meteo API** com tratamento de erros (`try/catch`).
+📄 **[Acessar Checklist de Funcionalidades e IDs (RAs)](docs/checklist.md)**
 
 ---
 
