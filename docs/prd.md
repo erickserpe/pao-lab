@@ -17,6 +17,7 @@ Padeiros caseiros, entusiastas de panificação artesanal (_sourdough_) e estuda
 - **US05:** Como usuário, quero **editar os dados de um experimento já cadastrado** para corrigir informações ou atualizar observações após a degustação do pão.
 - **US06:** Como usuário, quero **excluir um experimento do meu histórico** para remover testes descartados ou registros duplicados.
 - **US07:** Como usuário, quero **marcar experimentos como favoritos** para ter acesso rápido às minhas melhores receitas na interface.
+- **US08:** Como usuário, quero **cadastrar e gerenciar tipos de farinha** (marca, tipo, % de proteína) para reutilizá-los ao registrar novos experimentos, sem precisar redigitar essas informações.
 
 ## 4. Regras de Negócio
 
@@ -27,3 +28,4 @@ Padeiros caseiros, entusiastas de panificação artesanal (_sourdough_) e estuda
 - **RN05:** A exclusão de um experimento deve obrigatoriamente exibir um modal de confirmação para evitar perdas acidentais de dados.
 - **RN06:** A edição de um experimento deve preencher automaticamente o formulário com os dados existentes mantendo a integridade do ID original do registro no JSON Server.
 - **RN07:** O insucesso da consulta à Open-Meteo API (falha de rede ou timeout) não deve impedir o salvamento ou a edição do experimento.
+- **RN08:** O formulário de experimento deve permitir selecionar a farinha a partir dos tipos previamente cadastrados na entidade `Farinha` (via `<select>`), evitando duplicidade de digitação.
