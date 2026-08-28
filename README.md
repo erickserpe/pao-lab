@@ -22,7 +22,8 @@ A aplicação integra a **Open-Meteo API** para consultar automaticamente a temp
 
 ## 🎨 Prototipação & Design System
 
-- **🎨 Protótipo no Figma:** [Acessar Projeto no Figma](https://www.figma.com/)
+- **🧪 Protótipo no Stitch:** _[link a ser adicionado após a exploração inicial]_
+- **🎨 Refinamento no Figma:** _[link a ser adicionado após o refinamento do UI Kit]_
 - **📐 Design System:** [Documentação do Design System](docs/design-system.md)
 - **📐 Arquitetura de Software:** [Documentação de Arquitetura](docs/architecture.md)
 
@@ -65,7 +66,31 @@ O acompanhamento detalhado do status dos Indicadores de Desempenho (IDs) e Resul
 ### Passo a Passo
 
 1. **Clonar o repositório:**
+
    ```bash
-   git clone [https://github.com/erickserpe/pao-lab.git](https://github.com/erickserpe/pao-lab.git)
+   git clone https://github.com/erickserpe/pao-lab.git
    cd pao-lab
    ```
+
+2. **Instalar as dependências:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Subir a API fake (JSON Server):**
+
+   ```bash
+   npm run server
+   ```
+
+   O servidor ficará disponível em `http://localhost:3000`.
+
+4. **Abrir a aplicação:**
+   Abra o arquivo `index.html` com a extensão **Live Server** (VS Code) ou qualquer servidor estático local, mantendo o JSON Server rodando em paralelo.
+
+---
+
+## 🖼️ Telas da Aplicação
+
+> _Screenshots das telas principais (Dashboard, Cadastro de Experimento, Laboratório/Histórico) serão adicionadas aqui conforme o desenvolvimento avançar._
