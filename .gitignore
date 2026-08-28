@@ -1,0 +1,21 @@
+# Dependências
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Variáveis de ambiente
+.env
+
+# JSON Server (banco fake, se gerado localmente)
+db.json.bak
