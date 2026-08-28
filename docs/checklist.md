@@ -6,7 +6,7 @@
 
 ## RA1 - Frameworks CSS e Layouts Responsivos
 
-- [x] **ID 01:** Prototipação de telas mobile e desktop no Figma.
+- [ ] **ID 01:** Prototipação de telas mobile e desktop no Stitch/Figma.
 - [ ] **ID 02:** Layout responsivo construído com Grid e Flexbox do Bootstrap 5.
 - [ ] **ID 03:** Seções customizadas com layout fluido em CSS puro (Flexbox/Grid).
 - [ ] **ID 04:** Utilização de componentes Bootstrap (Cards, Navbar, Modais e Badges).
