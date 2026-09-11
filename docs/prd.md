@@ -29,3 +29,24 @@ Padeiros caseiros, entusiastas de panificação artesanal (_sourdough_) e estuda
 - **RN06:** A edição de um experimento deve preencher automaticamente o formulário com os dados existentes mantendo a integridade do ID original do registro no JSON Server.
 - **RN07:** O insucesso da consulta à Open-Meteo API (falha de rede ou timeout) não deve impedir o salvamento ou a edição do experimento.
 - **RN08:** O formulário de experimento deve permitir selecionar a farinha a partir dos tipos previamente cadastrados na entidade `Farinha` (via `<select>`), evitando duplicidade de digitação.
+
+## 5. Telas da Aplicação (Protótipo)
+
+O protótipo navegável (Stitch → Figma) contempla 8 telas, cobrindo o fluxo
+completo de uso e os estados de negócio previstos nas regras acima:
+
+| #   | Tela                      | Cobre                                                              |
+| --- | ------------------------- | ------------------------------------------------------------------ |
+| 1   | Painel                    | US03 — visão geral com clima, métricas e experimentos recentes     |
+| 2   | Novo Experimento          | US01, US02, US08, RN01–RN03, RN08 — cadastro e edição (mesma tela) |
+| 3   | Laboratório               | US04 — histórico completo, busca, filtro e ordenação               |
+| 4   | Detalhes do Experimento   | Leitura do registro completo antes de editar ou excluir (ver RN09) |
+| 5   | Confirmar Exclusão        | RN05 — modal de confirmação obrigatório                            |
+| 6   | Aviso: Clima Indisponível | RN07 — estado de falha não-bloqueante da Open-Meteo API            |
+| 7   | Sucesso ao Salvar         | Feedback de confirmação após salvar/editar um experimento          |
+| 8   | Laboratório Vazio         | Estado vazio (sem experimentos ou filtro sem resultado)            |
+
+- **RN09:** Ao tocar em um card de experimento (no Painel ou no Laboratório), o
+  usuário é levado primeiro para a tela de **Detalhes do Experimento** (somente
+  leitura). As ações de Editar e Excluir ficam disponíveis a partir dessa tela,
+  não diretamente pelo card da listagem.

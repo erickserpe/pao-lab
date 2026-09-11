@@ -22,7 +22,7 @@ A aplicação integra a **Open-Meteo API** para consultar automaticamente a temp
 
 ## 🎨 Prototipação & Design System
 
-- **🧪 Protótipo no Stitch:** _[link a ser adicionado após a exploração inicial]_
+- **🧪 Protótipo navegável no Stitch (8 telas, mobile + desktop):** _[link do Instant Prototype a ser adicionado aqui após a geração]_
 - **🎨 Refinamento no Figma:** _[link a ser adicionado após o refinamento do UI Kit]_
 - **📐 Design System:** [Documentação do Design System](docs/design-system.md)
 - **📐 Arquitetura de Software:** [Documentação de Arquitetura](docs/architecture.md)
@@ -67,22 +67,22 @@ O acompanhamento detalhado do status dos Indicadores de Desempenho (IDs) e Resul
 
 1. **Clonar o repositório:**
 
-   ```bash
+```bash
    git clone https://github.com/erickserpe/pao-lab.git
    cd pao-lab
-   ```
+```
 
 2. **Instalar as dependências:**
 
-   ```bash
+```bash
    npm install
-   ```
+```
 
 3. **Subir a API fake (JSON Server):**
 
-   ```bash
+```bash
    npm run server
-   ```
+```
 
    O servidor ficará disponível em `http://localhost:3000`.
 
@@ -93,4 +93,14 @@ O acompanhamento detalhado do status dos Indicadores de Desempenho (IDs) e Resul
 
 ## 🖼️ Telas da Aplicação
 
-> _Screenshots das telas principais (Dashboard, Cadastro de Experimento, Laboratório/Histórico) serão adicionadas aqui conforme o desenvolvimento avançar._
+O protótipo cobre 8 telas (fluxo completo + estados de negócio). Screenshots
+serão adicionados aqui conforme o desenvolvimento em HTML/CSS avançar:
+
+1. **Painel** — visão geral com clima atual, métricas e experimentos recentes
+2. **Novo Experimento** — formulário de cadastro/edição
+3. **Laboratório** — histórico completo com busca, filtro e ordenação
+4. **Detalhes do Experimento** — ficha de leitura do registro
+5. **Confirmar Exclusão** — modal de confirmação
+6. **Aviso: Clima Indisponível** — estado de erro não-bloqueante da API pública
+7. **Sucesso ao Salvar** — feedback de confirmação
+8. **Laboratório Vazio** — estado vazio

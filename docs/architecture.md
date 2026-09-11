@@ -111,3 +111,35 @@ Exemplo de resposta (simplificado):
 ```
 
 A latitude/longitude podem ser obtidas via `navigator.geolocation` (com fallback manual, caso o usuário negue a permissão). Falha na consulta (rede, timeout ou permissão negada) não deve impedir o salvamento do experimento — os campos `clima.temperatura` e `clima.umidade` ficam nulos e a interface exibe o estado de aviso descrito na seção 6.4 do Design System.
+
+## 5. Telas e Fluxo de Navegação (Protótipo)
+
+O protótipo (Stitch/Figma) contempla 8 telas mobile-first, já com as versões
+desktop correspondentes. Mapa de navegação:
+
+```
+Painel ──┬─→ (tocar card) ──→ Detalhes do Experimento ──┬─→ Editar ──→ Novo Experimento (modo edição)
+         │                                                └─→ Excluir ──→ Confirmar Exclusão ──→ volta ao Laboratório
+         └─→ (botão +) ──────→ Novo Experimento (modo criação) ──→ Sucesso ao Salvar ──→ Laboratório
+
+Laboratório ──┬─→ (tocar card) ──→ Detalhes do Experimento (mesmo fluxo acima)
+              └─→ (sem resultados) ──→ Laboratório Vazio
+
+Novo Experimento ──→ (falha na Open-Meteo) ──→ Aviso: Clima Indisponível (mesma tela, estado de erro no bloco de clima)
+```
+
+| Tela                      | Arquivo de referência no protótipo |
+| ------------------------- | ---------------------------------- |
+| Painel                    | `painel_p_o_lab`                   |
+| Novo Experimento          | `novo_experimento_p_o_lab`         |
+| Laboratório               | `laborat_rio_p_o_lab`              |
+| Detalhes do Experimento   | `detalhes_do_experimento_p_o_lab`  |
+| Confirmar Exclusão        | `confirmar_exclus_o_p_o_lab`       |
+| Aviso: Clima Indisponível | `aviso_clima_indispon_vel_p_o_lab` |
+| Sucesso ao Salvar         | `sucesso_ao_salvar_p_o_lab`        |
+| Laboratório Vazio         | `laborat_rio_vazio_p_o_lab`        |
+
+Todas as 8 telas compartilham o mesmo componente visual de "card de
+experimento" (badge de categoria, nome, farinha, hidratação, câmara/clima,
+nota em estrelas, tempo de fermentação) — não há variações de layout desse
+componente entre telas.
