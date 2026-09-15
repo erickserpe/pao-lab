@@ -22,7 +22,7 @@ A aplicação integra a **Open-Meteo API** para consultar automaticamente a temp
 
 ## 🎨 Prototipação & Design System
 
-- **🧪 Protótipo navegável no Stitch (8 telas, mobile + desktop):** _[link do Instant Prototype a ser adicionado aqui após a geração]_
+- **🧪 Protótipo navegável no Stitch (8 telas, mobile + desktop):** [Acessar Protótipo](https://stitch.withgoogle.com/projects/1469762731380819316)
 - **🎨 Refinamento no Figma:** _[link a ser adicionado após o refinamento do UI Kit]_
 - **📐 Design System:** [Documentação do Design System](docs/design-system.md)
 - **📐 Arquitetura de Software:** [Documentação de Arquitetura](docs/architecture.md)
@@ -63,6 +63,19 @@ O acompanhamento detalhado do status dos Indicadores de Desempenho (IDs) e Resul
 
 📄 **[Acessar Checklist de Funcionalidades e IDs (RAs)](docs/checklist.md)**
 
+
+---
+
+## ✅ Checklist da Atividade 06
+
+- [x] Configurei minha identidade no Git
+- [x] Clonei o repositório do meu projeto
+- [x] Inicializei o NPM (package.json)
+- [x] Criei o .gitignore ignorando node_modules e .env
+- [x] Instalei jquery e uuid como dependências de produção
+- [x] Instalei gh-pages como dependência de desenvolvimento
+- [x] Fiz commit e push para a branch main
+  
 ---
 
 ## ⚙️ Instruções de Execução
