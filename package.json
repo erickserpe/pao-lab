@@ -12,7 +12,12 @@
   },
   "devDependencies": {
     "eslint": "^9.0.0",
+    "gh-pages": "^6.3.0",
     "json-server": "^0.17.4",
     "prettier": "^3.3.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "uuid": "^14.0.2"
   }
 }
